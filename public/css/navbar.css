@@ -1,0 +1,147 @@
+/* Container Styles */
+.container-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #092044;
+    box-sizing: border-box;
+}
+
+/* Main Nav Styles */
+nav {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+nav li {
+    text-align: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #092044; /* Solid background to avoid transparency issue */
+    z-index: 1;
+    list-style: none;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s; /* Smooth fade-in */
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    visibility: hidden; /* Initially hide the dropdown */
+    opacity: 0; /* Start with invisible state */
+}
+
+.dropdown-content li {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li a {
+    margin-left: auto;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #064073;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    opacity: 1; /* Fade in on hover */
+}
+
+/* Notifications Dropdown Styles */
+.notifications {
+    width: 300px; /* Adjust width as needed */
+    max-height: 400px; /* Optional: Set max height with scroll */
+    overflow-y: auto;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-message {
+    width: 100%;
+    border-bottom: 1px solid #064073;
+    word-wrap: break-word; /* Ensures long words wrap to the next line */
+    overflow: hidden;
+}
+
+.media-body {
+    width: 100%;
+    white-space: normal; /* Allows text to wrap to the next line */
+    word-break: break-word; /* Breaks long words to avoid overflow */
+}
+.dropdown-item {
+    padding: 10px 15px;
+}
+
+.noti-time {
+    margin-top: 5px;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.topnav-dropdown-header,
+.topnav-dropdown-footer {
+    padding: 10px 15px;
+}
+
+.topnav-dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #064073;
+}
+
+.topnav-dropdown-footer {
+    border-top: 1px solid #064073;
+    text-align: center;
+}
+
+.clear-noti {
+    color: #fff;
+    text-decoration: none;
+}
+
+.clear-noti:hover {
+    text-decoration: underline;
+}
